@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Forms Demo</h1>
+    <h2>The Input Element</h2>
+    <p>
+      Input doesn't have a closing tag. Its type attribute has a big impact. The
+      same can be said for buttons (e.g., type: button).
+    </p>
+
+    <h2>This Demo Won't Work On Submission</h2>
+    <form action="/tacos ">
+      <p>
+        <label for="username"> Enter a username: </label>
+        <input
+          id="username"
+          type="text"
+          placeholder="username"
+          name="username"
+        />
+      </p>
+      <p>
+        <label for="password"> Enter a password: </label>
+        <input id="password" type="password" name="password" />
+      </p>
+      <p>
+        <label for="color"> Enter a color: </label>
+        <input id="color" type="color" name="color" />
+      </p>
+      <p>
+        <label for="number"> Enter a number: </label>
+        <input type="number" name="num" />
+      </p>
+      <p>
+        Placeholder attribute specifies the content that is originally shown.
+        Doesn't work for all inputs. Doesn't have labels at the moment.
+      </p>
+
+      <button>Submit</button>
+
+      <h2>Additional Information</h2>
+      <p>
+        Labels allow screenreaders to actually understand the text in the form.
+        It makes things interactive too. Two attributes are used: an ID and a
+        for attribute. Only one element should have a given ID.
+      </p>
+      <p>
+        The name attribute is important -> refers to a value that server is
+        looking for.
+      </p>
+    </form>
+
+    <h2>Checkboxes!</h2>
+
+    <h3>Won't Work - But Concept Here:</h3>
+    <form action="/birds">
+      <input type="checkbox" name="agree_tos" id="agree" checked />
+      <label for="agree">I agree</label>
+      <button>AGREE_TOS=ON</button>
+
+      <p>
+        <label for="XL">XL</label>
+        <input type="radio" name="size" id="XL" value="XL" />
+        <label for="L">L</label>
+        <input type="radio" name="size" id="L" value="L" />
+        <label for="XS">XS</label>
+        <input type="radio" name="size" id="XS" value="XS" />
+      </p>
+
+      <p>
+        <label for="meal">Please Select a Meal</label>
+        <select name="meal" id="meal">
+          <option value="fish">Fish</option>
+          <option value="veg">Vegetarian</option>
+          <option value="steak">Steak</option>
+        </select>
+      </p>
+
+      <p>
+        <label for="cheese">Amount of Cheese</label>
+        <input
+          value="5"
+          name="cheese_level"
+          id="cheese"
+          min="1"
+          max="10"
+          type="range"
+        />
+      </p>
+
+      <p>
+        <label for="requests"> Any Special Requests?</label>
+        <br />
+        <textarea
+          name=""
+          id="requests"
+          cols="40"
+          rows="10"
+          placeholder="Enter request here: "
+        ></textarea>
+      </p>
+      <button>Submit!</button>
+    </form>
+
+    <h2>A Working Form</h2>
+    <form action="https://reddit.com/search">
+      <input type="text" name="q" />
+      <button>Search Reddit</button>
+    </form>
+    <h2>Another Working (Google) Input</h2>
+    <form action="https://google.com/search">
+      <input type="text" name="q" />
+      <button>Search Google</button>
+    </form>
+    <h2>Another Working (YouTube) Input</h2>
+    <form action="https://youtube.com/results">
+      <input type="text" name="search_query" />
+      <button>Search YouTube</button>
+    </form>
+  </body>
+</html>
