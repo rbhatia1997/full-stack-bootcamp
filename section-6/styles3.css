@@ -1,0 +1,15 @@
+h1 {
+  text-align: right;
+  width: 50%;
+  font-weight: normal;
+  text-decoration: underline;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  line-height: 2;
+}
